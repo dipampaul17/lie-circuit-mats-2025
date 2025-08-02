@@ -1,0 +1,13 @@
+# Configuration for Cross-Layer Transcoder training
+src_layer: 6
+tgt_layer: 9
+hidden: 1024  # Increased for better capacity
+loss_mix:
+  kl: 0.5  # Balance KL and FVU loss
+  fvu: 0.5
+lr: 1e-4  # Lower learning rate for stability
+weight_decay: 1e-5  # Add regularization
+batch: 16  # Smaller batch for better gradients
+max_steps: 8000  # More steps for convergence
+early_stop_fvu: 0.15
+warmup_steps: 500

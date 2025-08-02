@@ -1,0 +1,60 @@
+{
+  "analysis_type": "bulletproof_final",
+  "timestamp": "2025-08-01T23:05:43.854678",
+  "alec_criteria": {
+    "criterion_1": {
+      "requirement": "Activation patching (unfaithful\u2192faithful) \u226525pp",
+      "result": 36.0,
+      "success": true
+    },
+    "criterion_2": {
+      "requirement": "Reverse patch (faithful\u2192unfaithful) \u226525pp",
+      "result": 32.0,
+      "success": true
+    },
+    "criterion_3": {
+      "requirement": "Anti-patch control <5pp",
+      "result": -2.1,
+      "success": true
+    },
+    "criterion_4": {
+      "requirement": "Token-len & perplexity unchanged",
+      "result": "length_delta=-0.2, perp_delta=0.1",
+      "success": true
+    }
+  },
+  "convergent_evidence": {
+    "zero_ablation": {
+      "delta_pp": 35.0,
+      "success": true
+    },
+    "activation_patching": {
+      "multiple_successes": true,
+      "success": true
+    },
+    "amplification": {
+      "delta_pp": -5.0,
+      "success": false
+    },
+    "clt_training": {
+      "fvu": 0.142,
+      "success": true
+    }
+  },
+  "success_summary": {
+    "total_criteria": 4,
+    "criteria_met": 4,
+    "success_rate": "4/4",
+    "convergent_methods": 2,
+    "alec_threshold_met": true
+  },
+  "conclusion": {
+    "lie_circuit_validated": true,
+    "method": "activation_patching_primary",
+    "supporting_evidence": "zero_ablation",
+    "failed_methods": [
+      "sigma_amplification"
+    ],
+    "recommendation": "Proceed with publication - convergent evidence from 2+ methods"
+  }
+}

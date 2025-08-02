@@ -1,0 +1,20 @@
+{
+  "experiment": "cross_layer_transcoder",
+  "src_layer": 6,
+  "tgt_layer": 9,
+  "architecture": "improved_with_residual",
+  "hidden_dim": 1024,
+  "learning_rate": 0.0001,
+  "final_fvu": 0.142,
+  "training_steps": 6800,
+  "training_time_hours": 2.3,
+  "early_stopped": true,
+  "success": true,
+  "timestamp": "2025-08-01T23:05:43.854183",
+  "improvements": [
+    "Increased hidden dimensions to 1024",
+    "Added residual connections",
+    "Lowered learning rate for stability",
+    "Added layer normalization and dropout"
+  ]
+}

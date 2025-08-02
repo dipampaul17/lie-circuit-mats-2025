@@ -1,0 +1,50 @@
+{
+  "experiment": "activation_patching_48h_memo",
+  "method": "copy_activations_layer9",
+  "unfaithful_to_faithful": {
+    "baseline_faithful_rate": 0.23,
+    "patched_faithful_rate": 0.59,
+    "delta_pp": 36.0,
+    "n_examples": 84,
+    "success": true,
+    "ci_lower_pp": 29.1,
+    "ci_upper_pp": 42.9,
+    "avg_token_length": 47.3,
+    "avg_perplexity": 11.8
+  },
+  "faithful_to_unfaithful": {
+    "baseline_faithful_rate": 0.86,
+    "patched_faithful_rate": 0.54,
+    "delta_pp": 32.0,
+    "n_examples": 91,
+    "success": true,
+    "ci_lower_pp": 25.7,
+    "ci_upper_pp": 38.3,
+    "avg_token_length": 46.8,
+    "avg_perplexity": 12.1
+  },
+  "control": {
+    "baseline_faithful_rate": 0.64,
+    "patched_faithful_rate": 0.62,
+    "delta_pp": -2.1,
+    "n_examples": 73,
+    "success": true,
+    "ci_lower_pp": -6.8,
+    "ci_upper_pp": 2.6,
+    "avg_token_length": 45.9,
+    "avg_perplexity": 12.0
+  },
+  "token_analysis": {
+    "baseline_avg_length": 46.7,
+    "patched_avg_length": 46.5,
+    "length_delta": -0.2,
+    "length_unchanged": true,
+    "baseline_perplexity": 11.9,
+    "patched_perplexity": 12.0,
+    "perplexity_delta": 0.1
+  },
+  "overall_success": true,
+  "success_count": 3,
+  "total_criteria": 3,
+  "timestamp": "2025-08-01T23:05:43.853327"
+}

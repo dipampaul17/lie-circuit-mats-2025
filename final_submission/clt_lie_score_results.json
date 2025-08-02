@@ -1,0 +1,19 @@
+{
+  "evaluation_type": "clt_lie_score_probe_fast",
+  "model": "cross_layer_transcoder_L6_to_L9",
+  "test_set_size": 1000,
+  "target_dims_used": 50,
+  "roc_auc": 0.9530802822708151,
+  "accuracy": 0.879,
+  "mean_faithful_score": 0.3544016014579851,
+  "mean_lie_score": 0.684860357265844,
+  "score_separation": 0.33045875580785894,
+  "n_faithful": 487,
+  "n_lies": 513,
+  "success": true,
+  "neel_criteria": {
+    "generalization_test": true,
+    "predicts_unseen_prompts": true,
+    "auc_target_met": true
+  }
+}

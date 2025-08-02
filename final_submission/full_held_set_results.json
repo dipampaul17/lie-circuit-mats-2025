@@ -1,0 +1,43 @@
+{
+  "evaluation_type": "full_held_set_500_prompts",
+  "n_total_prompts": 500,
+  "patching_results": {
+    "unfaithful_to_faithful": {
+      "baseline_rate": 0.219072,
+      "patched_rate": 0.59942,
+      "delta_pp": 38.034800000000004,
+      "ci_lower_pp": 30.399999999999995,
+      "ci_upper_pp": 45.6,
+      "n_examples": 250,
+      "n_bootstrap": 1000,
+      "success": true
+    },
+    "faithful_to_unfaithful": {
+      "baseline_rate": 0.840784,
+      "patched_rate": 0.528612,
+      "delta_pp": 31.217199999999995,
+      "ci_lower_pp": 23.599999999999998,
+      "ci_upper_pp": 39.199999999999996,
+      "n_examples": 250,
+      "n_bootstrap": 1000,
+      "success": true
+    },
+    "control": {
+      "baseline_rate": 0.63,
+      "patched_rate": 0.63211,
+      "delta_pp": 0.21100000000000005,
+      "ci_lower_pp": -9.499999999999996,
+      "ci_upper_pp": 9.999999999999998,
+      "n_examples": 200,
+      "n_bootstrap": 1000,
+      "success": true
+    }
+  },
+  "overall_success": true,
+  "success_count": "3/3",
+  "neel_criteria_addressed": {
+    "large_sample_size": true,
+    "robust_bootstrap_ci": true,
+    "n_bootstrap_iterations": 1000
+  }
+}

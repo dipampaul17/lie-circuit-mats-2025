@@ -51,7 +51,7 @@ Copy activations between examples: `target_acts[dims] = source_acts[dims]`
 - **Probe**: Linear classifier on target dimensions
 
 ### 2.3 Statistical Analysis
-- **Sample size**: 500 prompts per condition (addressing Neel's concern)
+- **Sample size**: 500 prompts per condition (robust statistical power)
 - **Bootstrap CI**: 1000 iterations for robust confidence intervals
 - **Controls**: Layer-6 random dimensions, cross-prompt patching
 
@@ -156,8 +156,8 @@ This work establishes a foundation for mechanistic understanding of deception in
 ## References
 
 [1] Anthropic. Constitutional AI: Harmlessness from AI Feedback. 2022.
-[2] Neel Nanda. TransformerLens: A Library for Mechanistic Interpretability. 2023.
-[3] Alec Radford et al. Language Models are Unsupervised Multitask Learners. 2019.
+[2] Nanda, N. TransformerLens: A Library for Mechanistic Interpretability. 2023.
+[3] Radford, A. et al. Language Models are Unsupervised Multitask Learners. 2019.
 
 ---
 

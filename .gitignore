@@ -23,12 +23,15 @@ share/python-wheels/
 *.egg
 MANIFEST
 
-# PyTorch
+# PyTorch models and checkpoints
 *.pt
 *.pth
+*.pkl
+*.pickle
 
 # Jupyter Notebook
 .ipynb_checkpoints
+*.ipynb_checkpoints/
 
 # Environment
 .env
@@ -38,15 +41,19 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+conda-meta/
+.conda/
 
-# IDEs
+# IDEs and editors
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
+.spyderproject
+.spyproject
 
-# OS
+# OS generated files
 .DS_Store
 .DS_Store?
 ._*
@@ -54,14 +61,63 @@ venv.bak/
 .Trashes
 ehthumbs.db
 Thumbs.db
+desktop.ini
 
-# Experiment outputs
+# Experiment outputs and data
 results/
+outputs/
 logs/
 checkpoints/
+wandb/
+tensorboard/
+mlruns/
 *.log
+*.csv
+*.tsv
+*.h5
+*.hdf5
 
-# Temporary files
+# Research artifacts
+figures/
+plots/
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.eps
+!final_submission/*.pdf
+!final_submission/*.png
+
+# Cache directories
+.cache/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Backup and temporary files
+*.bak
+*.backup
+*.orig
+*.save
+*.tmp
+*~
 tmp/
 temp/
-*.tmp
+scratch/
+
+# Large data files
+data/
+datasets/
+*.npy
+*.npz
+*.json.gz
+*.tar.gz
+*.zip
+
+# API keys and secrets
+.env.local
+.env.production
+secrets.txt
+api_keys.txt

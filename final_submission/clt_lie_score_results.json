@@ -11,7 +11,7 @@
   "n_faithful": 487,
   "n_lies": 513,
   "success": true,
-  "neel_criteria": {
+  "generalization_criteria": {
     "generalization_test": true,
     "predicts_unseen_prompts": true,
     "auc_target_met": true

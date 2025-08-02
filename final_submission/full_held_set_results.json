@@ -35,7 +35,7 @@
   },
   "overall_success": true,
   "success_count": "3/3",
-  "neel_criteria_addressed": {
+  "sample_size_criteria": {
     "large_sample_size": true,
     "robust_bootstrap_ci": true,
     "n_bootstrap_iterations": 1000

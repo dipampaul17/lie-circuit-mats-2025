@@ -1,0 +1,34 @@
+{
+  "timestamp": "2025-08-02T14:30:59.341142",
+  "model": "gpt2-small",
+  "device": "cuda",
+  "analysis_type": "REAL_NEURAL_MECHANISTIC_INTERPRETABILITY",
+  "discriminative_dims": [
+    373,
+    718,
+    586,
+    578,
+    71,
+    513,
+    269,
+    698,
+    57,
+    610
+  ],
+  "ablation_experiment": {
+    "baseline_mean": 0.2533003717660904,
+    "ablated_mean": 0.2570604681968689,
+    "effect": 0.0037600964307785145,
+    "n_dims_ablated": 50
+  },
+  "patching_experiments": {
+    "faithful_to_unfaithful": {
+      "mean_patched_prob": 0.23754262030124665,
+      "std_patched_prob": 0.024741278254238743
+    },
+    "unfaithful_to_faithful": {
+      "mean_patched_prob": 0.2355562150478363,
+      "std_patched_prob": 0.0762442213899076
+    }
+  }
+}
